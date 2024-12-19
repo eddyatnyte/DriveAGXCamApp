@@ -1,0 +1,31 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run and Debug C++ Program",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}", // Ausführbare Datei
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}", // Arbeitsverzeichnis
+            "environment": [],
+            "externalConsole": true, // Externe Konsole verwenden
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "C/C++: g++ build active file", // Verweis auf deine Build-Task
+            "miDebuggerPath": "/usr/bin/gdb", // Pfad zum Debugger
+            "logging": {
+                "moduleLoad": false,
+                "trace": false,
+                "engineLogging": false
+            }
+        }
+    ]
+}

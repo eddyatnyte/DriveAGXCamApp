@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/local/include/opencv4/**",
+                "/usr/local/driveworks/include",
+                "/usr/local/cuda/include",
+                "/usr/local/driveworks/samples/3rdparty/src/glew/include/include",
+                "/usr/local/driveworks/samples/3rdparty/src/glfw/3.2-screen/include",
+                "/usr/local/driveworks/samples/src",
+                "/home/orin-conti/opencv_build/opencv_contrib/modules/cudaarithm/include/",
+                "/home/orin-conti/opencv_build/opencv_contrib/modules/cudawarping/include/",
+                "/home/orin-conti/opencv_build/opencv_contrib/modules/cudafeatures2d/include/"
+            ],
+            "defines": [],
+            "cStandard": "c17",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "linux-gcc-arm64"
+        }
+    ],
+    "version": 4
+}
